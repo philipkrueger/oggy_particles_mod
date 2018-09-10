@@ -58,7 +58,7 @@ println(txt);
 public void Vector(String text) {
   txt = text;
   offSet = 0;
-  Logo = RG.loadShape(text);
+  Logo = RG.loadShape("vector/" + text);
   Logo = RG.centerIn(Logo, g, 100);
 println(txt);
 }
@@ -82,7 +82,7 @@ void bar(int n) {
   if (n == 0)
   {
     offSet = 0;
-    Logo = RG.loadShape("Antifa.svg");
+    Logo = RG.loadShape("vector/Antifa.svg");
     Logo = RG.centerIn(Logo, g, 100);
   }
   println("bar clicked, item-value:", n);
